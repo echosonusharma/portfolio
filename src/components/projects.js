@@ -1,7 +1,11 @@
 import { Box, Image, Tooltip, Center, Flex, LinkOverlay, Text, Button, HStack, Tag } from "@chakra-ui/react";
 import React from "react";
 import ReactPlayer from 'react-player/youtube';
-
+//
+import reactJS from '../assets/reactjs.svg';
+import nodeJS from '../assets/nodejs.svg';
+import PostgreSQL from '../assets/postgresql.svg';
+import KnexJS from '../assets/knex.png';
 
 const VideoPlayer = ({ url, thumbnail }) => {
     return (
@@ -60,22 +64,22 @@ const Project = () => {
                                 <Tag variant="outline" colorScheme="blue">Build With</Tag>
                                 <HStack spacing={6} py={5} >
                                     <Label
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                                        src={reactJS}
                                         alt="react"
                                         label="React.js"
                                     />
                                     <Label
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg"
+                                        src={nodeJS}
                                         alt="Node.js"
                                         label="Node.js"
                                     />
                                     <Label
-                                        src="https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/passportjs.svg"
-                                        alt="passport.js"
-                                        label="Passport.js"
+                                        src={PostgreSQL}
+                                        alt="PostgreSQL"
+                                        label="PostgreSQL"
                                     />
                                     <Label
-                                        src="https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/knex.png"
+                                        src={KnexJS}
                                         alt="knex.js"
                                         label="Knex.js"
                                     />

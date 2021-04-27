@@ -1,5 +1,25 @@
 import React from "react";
 import { Box, Center, Flex, Text, HStack, Grid, Image, VStack, useMediaQuery } from "@chakra-ui/react";
+//
+import javascript from '../assets/javascript.svg';
+import typescript from '../assets/typescript.svg';
+import python from '../assets/python.svg';
+import html5 from '../assets/html5.svg';
+import css3 from '../assets/css3.svg';
+import reactJS from '../assets/reactjs.svg';
+import next from '../assets/nextjs.svg';
+import tailwindCSS from '../assets/tailwindCSS.svg';
+import chakraUI from '../assets/chakraUI.png';
+import nodeJS from '../assets/nodejs.svg';
+import expressJS from '../assets/express-js.png';
+import PostgreSQL from '../assets/postgresql.svg';
+import mongoDB from '../assets/mongodb.svg';
+import linux from '../assets/linux.png';
+import bash from '../assets/bash.svg';
+import git from '../assets/git.png';
+import vscode from '../assets/vscode.svg';
+
+
 
 
 const ImageBox = ({ src, alt, name }) => {
@@ -24,16 +44,16 @@ const Lang = () => {
     return (
         <>
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/javascript.svg'
+                src={javascript}
                 alt='Javascript'
                 name='Javascript' />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/typescript.svg'
+                src={typescript}
                 alt='Typescript'
                 name='Typescript'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/python.svg'
+                src={python}
                 alt='Python'
                 name='Python'
             />
@@ -47,31 +67,31 @@ const FrontEnd = () => {
     return (
         <>
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/html5.svg'
+                src={html5}
                 alt='HTML5'
                 name='HTML5' />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/css3.svg'
+                src={css3}
                 alt='CSS3'
                 name='CSS3'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/reactjs.svg'
+                src={reactJS}
                 alt='ReactJS'
                 name='ReactJS'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/nextJS.svg'
+                src={next}
                 alt='NextJS'
                 name='NextJS'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/tailwindCSS.svg'
+                src={tailwindCSS}
                 alt='TailwindCSS'
                 name='TailwindCSS'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/chakraUI.png'
+                src={chakraUI}
                 alt='ChakraUI'
                 name='ChakraUI'
             />
@@ -84,19 +104,24 @@ const BackEnd = () => {
     return (
         <>
             <ImageBox
-                src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg'
+                src={nodeJS}
                 alt='NodeJS'
                 name='NodeJS'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/express-js.png'
+                src={expressJS}
                 alt='ExpressJS'
                 name='ExpressJS'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/postgresql.svg'
+                src={PostgreSQL}
                 alt='PostgreSQL'
                 name='PostgreSQL'
+            />
+            <ImageBox
+                src={mongoDB}
+                alt='mongoDB'
+                name='mongoDB'
             />
 
         </>
@@ -108,22 +133,22 @@ const Tools = () => {
     return (
         <>
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/linux.png'
+                src={linux}
                 alt='Linux'
                 name='Linux'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/bash.svg'
+                src={bash}
                 alt='Bash'
                 name='Bash'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/git.png'
+                src={git}
                 alt='Git'
                 name='Git'
             />
             <ImageBox
-                src='https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/vscode.svg'
+                src={vscode}
                 alt='VScode'
                 name='VScode'
             />

@@ -4,8 +4,8 @@ import { useDencrypt } from "use-dencrypt-effect";
 import Lottie from "react-lottie";
 import { animateScroll as scroll } from "react-scroll";
 //assets
-import sun from '../assets/sun.png'
-import moon from '../assets/moon.png'
+import sun from '../assets/sun.svg'
+import moon from '../assets/moon.svg'
 import animationData from "../assets/blob.json";
 
 
