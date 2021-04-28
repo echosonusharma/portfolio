@@ -3,6 +3,8 @@ import { Box, Image, Flex, Text, useMediaQuery, useColorMode, useColorModeValue,
 import { useDencrypt } from "use-dencrypt-effect";
 import Lottie from "react-lottie";
 import { animateScroll as scroll } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 //assets
 import sun from '../assets/sun.svg'
 import moon from '../assets/moon.svg'
@@ -38,6 +40,15 @@ const Crypt = () => {
 
 
 const AnimatedBlob = () => {
+
+    useEffect(() => {
+      AOS.init({
+          offset: 200,
+          delay: 150,
+          duration: 500
+      });
+    }, []);
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -48,7 +59,7 @@ const AnimatedBlob = () => {
     };
 
     return(
-        <Box pt={['27rem','22rem']} pl='15rem' onClick={() => scroll.scrollMore(1100, { smooth: true, spy: true, duration: 1200, delay: 100 })} >
+        <Box pt={['27rem','22rem']} pl='15rem' onClick={() => scroll.scrollMore(1100, { smooth: true, spy: true, duration: 1200, delay: 100 })} data-aos="zoom-in">
            <Box overflow="hidden" pos="absolute">
             <Lottie
                 options={defaultOptions}

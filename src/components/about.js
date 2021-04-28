@@ -1,7 +1,9 @@
 import { Box, Center, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import animationData from "../assets/guy.json";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -30,9 +32,18 @@ const Animation = () => {
 const About = () => {
 
 
+    useEffect(() => {
+        AOS.init({
+            offset: 400,
+            delay: 50,
+            duration: 100
+        });
+    }, []);
+
+
     return (
-        <Box py={['2rem', '5rem']}>
-            <div className='about-bg'>
+        <Box py={['2rem', '5rem']} >
+            <div className='about-bg' data-aos="fade-up">
                 <Center
                     fontFamily="'Monoton' , cursive"
                     fontWeight="400"

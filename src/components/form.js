@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Box,
     Button,
@@ -11,9 +11,22 @@ import {
     useToast,
     Flex,
 } from "@chakra-ui/react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FormSub = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            disable: 'mobile',
+            delay: 150,
+            duration: 500
+        });
+    }, []);
+
+
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -65,7 +78,7 @@ const FormSub = () => {
 
 
     return (
-        <Box py={['1rem', '3rem']}>
+        <Box py={['1rem', '3rem']} data-aos="zoom-in">
             <Center
                 fontFamily='Monoton'
                 fontWeight={['400']}

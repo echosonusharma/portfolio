@@ -165,7 +165,7 @@ const Skills = () => {
 
     return (
         <>
-            <Box py={['1rem', '3rem', '4rem']}>
+            <Box py={['1rem', '3rem', '4rem']} >
                 <Center
                     fontFamily='Monoton'
                     fontWeight="400"
@@ -176,12 +176,12 @@ const Skills = () => {
                     <HStack>
                         <Flex d="row" >
 
-                            <Box py={['1rem', '2rem']}>
+                            <Box py={['1rem', '2rem']} >
                                 <Box>
                                     <Text fontSize={['1rem', '1.4rem', '1.6rem']} >Languages</Text>
                                     <Box w="4rem" h="0.2rem" bg="blue.200" borderRadius="2xl" mb="2rem" />
                                 </Box>
-                                <Box pl={['1rem', '2rem', '4rem']} py={['1rem', '1.5rem']}>
+                                <Box pl={['1rem', '2rem', '4rem']} py={['1rem', '1.5rem']} >
                                     {
                                         lg ?
                                             <HStack spacing='3rem'>
@@ -195,7 +195,7 @@ const Skills = () => {
                                 </Box>
                             </Box>
 
-                            <Box py={['1rem', '2rem']}>
+                            <Box py={['1rem', '2rem']} >
                                 <Box>
                                     <Text fontSize={['1rem', '1.4rem', '1.6rem']} >Front-End</Text>
                                     <Box w="4rem" h="0.2rem" bg="blue.200" borderRadius="2xl" mb="2rem" />
@@ -215,7 +215,7 @@ const Skills = () => {
                             </Box>
 
 
-                            <Box py={['1rem', '2rem']}>
+                            <Box py={['1rem', '2rem']} >
                                 <Box>
                                     <Text fontSize={['1rem', '1.4rem', '1.6rem']} >Back-End</Text>
                                     <Box w="4rem" h="0.2rem" bg="blue.200" borderRadius="2xl" mb="2rem" />
@@ -227,14 +227,14 @@ const Skills = () => {
                                                 <BackEnd />
                                             </HStack>
                                             :
-                                            <Grid templateColumns="repeat(3, 1fr)" >
+                                            <Grid templateColumns="repeat(4, 1fr)" >
                                                 <BackEnd />
                                             </Grid>
                                     }
                                 </Box>
                             </Box>
 
-                            <Box py={['1rem', '2rem']}>
+                            <Box py={['1rem', '2rem']} >
                                 <Box>
                                     <Text fontSize={['1rem', '1.4rem', '1.6rem']} >Tools</Text>
                                     <Box w="4rem" h="0.2rem" bg="blue.200" borderRadius="2xl" mb="2rem" />

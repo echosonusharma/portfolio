@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Center, HStack, Image, Tooltip, Text, VStack } from "@chakra-ui/react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const IconBox = ({ url, src, alt }) => {
     return (
@@ -18,12 +19,21 @@ const IconBox = ({ url, src, alt }) => {
 };
 
 
-
-
 const Footer = () => {
 
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            disable: 'mobile',
+            delay: 100,
+            easing: 'ease-in-back',
+            duration: 400
+        });
+    }, []);
+
+
     return (
-        <Box>
+        <Box data-aos="fade-up">
             <div className='footer-bg'>
                 <Center pt={['12rem', '14rem', '15rem']}>
                     <VStack spacing={['1rem', '2rem']}>
@@ -45,7 +55,7 @@ const Footer = () => {
                             <a href="https://create-react-app.dev/" target='_blank' rel="noreferrer">
                                 <Text color="green.900" fontWeight='600'>ReactJS</Text>
                             </a>
-                            <div>&</div>
+                            <p>&</p>
                             <a href="https://chakra-ui.com/" target='_blank' rel="noreferrer">
                                 <Text color="blue.900" fontWeight='600'>ChakraUI</Text>
                             </a>
