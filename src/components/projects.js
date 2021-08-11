@@ -13,7 +13,7 @@ import NextJS from '../assets/nextjs.svg';
 
 const VideoPlayer = ({ url, thumbnail }) => {
     return (
-        <Box w={['330px', '622px']} h={['185px', '350px']}>
+        <Box w={['330px', '622px']} h={['185px', '350px']} boxShadow="2xl">
             < ReactPlayer
                 url={url}
                 width='100%'
@@ -60,7 +60,7 @@ const Project = () => {
                     <Box fontFamily='poppins' pb={['6rem', '6rem', '12rem']} >
                         <Flex direction={['column-reverse', 'column-reverse', 'row']}>
                             <Box w={['80vw', '30rem']} pr={['0rem', '3rem']}>
-                                <Text fontSize={['1.25rem', '2rem',]} fontWeight={['600', '700']} pb={3} pt={3} className="name">Smart Brains</Text>
+                                <Text fontSize={['1.25rem', '2rem',]} fontWeight={['600', '700']} pb={3} pt={3} className="name" >Smart Brains</Text>
                                 <Text pb={5} fontSize={['0.85rem', '1rem']} fontWeight={['350']}>
                                     Smart Brains is an application in which by signing up with an email you can search
                                     for a human face in a image using the power of AI.

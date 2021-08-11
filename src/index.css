@@ -2,49 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .about-bg {
-  background-color: #90cdf4;
-  height: 90vh;
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-  margin-top: 4rem;
-  color: #000;
+	background-color: rgb(148, 214, 255);
+	height: 90vh;
+	clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+	margin-top: 4rem;
+	color: #000;
 }
 
 .footer-bg {
-  background-color: #90cdf4;
-  min-height: 50vh;
-  clip-path: polygon(0 34%, 100% 48%, 100% 100%, 0% 100%);
-  color: #000;
+	background-color: rgb(148, 214, 255);
+	min-height: 50vh;
+	clip-path: polygon(0 34%, 100% 48%, 100% 100%, 0% 100%);
+	color: #000;
 }
 
 .name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  background: linear-gradient(to right, #ff0080 0%, #7928ca 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-size: 1.1rem;
+	font-weight: 600;
+	background: linear-gradient(to right, #ff0080 0%, #7928ca 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .expand:hover {
-  transform: scale(1.1);
-  transition: ease-in-out;
+	transform: scale(1.1);
+	transition: ease-in-out;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(63, 178, 255, 0.1);
+	background: rgba(63, 178, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(102, 102, 102);
-  border-radius: 1rem;
+	background: rgb(102, 102, 102);
+	border-radius: 1rem;
 }

@@ -18,7 +18,7 @@ import linux from '../assets/linux.png';
 import bash from '../assets/bash.svg';
 import git from '../assets/git.png';
 import vscode from '../assets/vscode.svg';
-
+import docker from '../assets/docker.png';
 
 
 
@@ -123,7 +123,6 @@ const BackEnd = () => {
                 alt='mongoDB'
                 name='mongoDB'
             />
-
         </>
     )
 };
@@ -152,7 +151,11 @@ const Tools = () => {
                 alt='VScode'
                 name='VScode'
             />
-
+            <ImageBox
+                src={docker}
+                alt='docker'
+                name='Docker'
+            />
         </>
     )
 

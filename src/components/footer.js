@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Box, Center, HStack, Image, Tooltip, Text, VStack } from "@chakra-ui/react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+//
+import linkedin from '../assets/linkedin.png';
+import github from '../assets/github.png';
 
 const IconBox = ({ url, src, alt }) => {
     return (
@@ -9,7 +10,7 @@ const IconBox = ({ url, src, alt }) => {
             <a href={url} target='_blank' rel="noreferrer" >
                 <Image
                     src={src}
-                    boxSize={['40x', '45px', '50px']}
+                    boxSize={['40x', '45px', '40px']}
                     alt={alt}
                 />
             </a>
@@ -20,32 +21,20 @@ const IconBox = ({ url, src, alt }) => {
 
 
 const Footer = () => {
-
-    useEffect(() => {
-        AOS.init({
-            offset: 200,
-            disable: 'mobile',
-            delay: 100,
-            easing: 'ease-in-back',
-            duration: 400
-        });
-    }, []);
-
-
     return (
-        <Box data-aos="fade-up">
+        <Box>
             <div className='footer-bg'>
                 <Center pt={['12rem', '14rem', '15rem']}>
                     <VStack spacing={['1rem', '2rem']}>
                         <HStack spacing={['1rem', '2rem']}>
                             <IconBox
                                 url="https://github.com/echosonusharma"
-                                src="https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/socials/github.svg"
+                                src={github}
                                 alt="Github"
                             />
                             <IconBox
-                                url="https://linedin.com/echosonusharma"
-                                src="https://raw.githubusercontent.com/echosonusharma/static-assets/main/Icons/socials/linkedin.svg"
+                                url="https://linkedin.com/echosonusharma"
+                                src={linkedin}
                                 alt="LinkedIn"
                             />
 

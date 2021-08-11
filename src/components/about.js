@@ -59,7 +59,8 @@ const About = () => {
                             fontFamily='poppins'>
                             Hello there, I’m <span className="name"><a href="https://github.com/echosonusharma" target='_blank' rel="noreferrer" >Sonu Sharma.</a></span>
                             I’m a full stack developer, who is currently pursuing his bachelor’s degree in computer science. Creating and building things has
-                            always been a passion of mine. I love utilizing modern day tools like next, node etc., to build awesome stuff! and lately I’m into databases and bash scripting.
+                            always been a passion of mine. I love utilizing modern day tools like react, node etc., to build awesome stuff! and lately I've been
+                            into databases and bash scripting.
                         </Text>
                     </Flex>
                 </Center>
