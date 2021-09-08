@@ -249,7 +249,7 @@ const Skills = () => {
                                                 <Tools />
                                             </HStack>
                                             :
-                                            <Grid templateColumns="repeat(4, 1fr)" >
+                                            <Grid templateColumns="repeat(4, 1fr)" rowGap='1.5rem' columnGap='2rem'>
                                                 <Tools />
                                             </Grid>
                                     }

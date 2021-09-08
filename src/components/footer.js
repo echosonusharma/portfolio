@@ -7,13 +7,16 @@ import github from '../assets/github.png';
 const IconBox = ({ url, src, alt }) => {
     return (
         <Tooltip label={alt} aria-label={alt} placement="top">
-            <a href={url} target='_blank' rel="noreferrer" >
-                <Image
-                    src={src}
-                    boxSize={['40x', '45px', '40px']}
-                    alt={alt}
-                />
-            </a>
+            <div className='img-box'>
+
+                <a href={url} target='_blank' rel="noreferrer" >
+                    <Image
+                        src={src}
+                        boxSize={['40x', '45px', '40px']}
+                        alt={alt}
+                    />
+                </a>
+            </div>
         </Tooltip>
 
     )

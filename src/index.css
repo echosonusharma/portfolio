@@ -8,7 +8,22 @@
 }
 
 .about-bg {
-	background-color: rgb(148, 214, 255);
+	/* background-color: rgb(148, 214, 255); */
+	background-image: linear-gradient(
+		to bottom,
+		rgb(83, 95, 230),
+		rgb(95, 96, 225),
+		rgb(108, 97, 220),
+		rgb(120, 98, 214),
+		rgb(132, 99, 209),
+		rgb(145, 100, 204),
+		rgb(157, 100, 199),
+		rgb(170, 101, 194),
+		rgb(182, 102, 189),
+		rgb(194, 103, 183),
+		rgb(207, 104, 178),
+		rgb(219, 105, 173)
+	);
 	height: 90vh;
 	clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
 	margin-top: 4rem;
@@ -16,7 +31,21 @@
 }
 
 .footer-bg {
-	background-color: rgb(148, 214, 255);
+	background-image: linear-gradient(
+		to top,
+		rgb(101, 115, 255),
+		rgb(111, 114, 247),
+		rgb(120, 114, 239),
+		rgb(130, 113, 231),
+		rgb(139, 112, 223),
+		rgb(149, 111, 215),
+		rgb(158, 111, 208),
+		rgb(168, 110, 200),
+		rgb(177, 109, 192),
+		rgb(187, 108, 184),
+		rgb(196, 108, 176),
+		rgb(206, 107, 168)
+	);
 	min-height: 50vh;
 	clip-path: polygon(0 34%, 100% 48%, 100% 100%, 0% 100%);
 	color: #000;
@@ -25,9 +54,14 @@
 .name {
 	font-size: 1.1rem;
 	font-weight: 600;
-	background: linear-gradient(to right, #ff0080 0%, #7928ca 100%);
+	background: linear-gradient(to right, #da006d 0%, #7928ca 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.img-box {
+	background-color: azure;
+	border-radius: 10px;
 }
 
 .expand:hover {
